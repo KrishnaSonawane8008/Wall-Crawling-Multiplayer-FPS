@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://8jai0xhv0pa6"]
+
+[ext_resource type="Script" path="res://FPSDisplay.gd" id="1_udjdq"]
+
+[node name="FPSMeter" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 1.0
+offset_top = 212.0
+offset_right = 41.0
+offset_bottom = 235.0
+script = ExtResource("1_udjdq")

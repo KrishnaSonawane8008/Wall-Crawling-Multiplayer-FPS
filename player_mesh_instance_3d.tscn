@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cehvtjtgfpn5q"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_bp460"]
+
+[node name="PlayerMeshInstance3D" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_bp460")
