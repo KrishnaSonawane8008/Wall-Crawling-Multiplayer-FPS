@@ -59,3 +59,8 @@ If you want to go through a basic setup tutorial, i would recommend these videos
 <li>FinePointCGI :- https://www.youtube.com/watch?v=e0JLO_5UgQo&t=0s</li>
 <br>
 <li>DevLogLogan :- https://www.youtube.com/watch?v=n8D3vEx7NAE&t=0s</li>
+<h1>The Environment</h1>
+If you went through <a href="https://github.com/KrishnaSonawane8008/Walking-on-Mesh-Surface-in-Godot-4">this</a> page, you will know that the mesh surface walking plugin works, so first i needed to build the entire environment in blender and run it for edge cases using the SortMesh class in the <a href="https://github.com/KrishnaSonawane8008/Walking-on-Mesh-Surface-in-Godot-4">plugin</a>. 
+<br>
+<br>
+Once i was sure that the environment had "clean" geometry, i can make the actual model invisible and just replace the environment with its parts. Each part has the same geometry or mostly the same geometry as that part of the walking surface, but are of a better quality and have been completely textured.
