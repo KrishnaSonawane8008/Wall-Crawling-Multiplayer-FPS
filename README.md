@@ -71,4 +71,20 @@ Godot doesn't really allow for a lot of high quality grass, like there is the <a
 You might notice that the grass in the <a href="/BetterQuality_GameplayVideo/Multiplayer_GameplayCompressed.mp4">gameplay video</a> looks like a bunch of cones. This is not a choice for giving the grass a stylized look but rather a try at hiding the "secrets" of the grass.
 <br>
 <br>
-You see, the grass in the game is actually not grass:
+You see, the grass in the game is actually Not Grass:
+<video src="https://github.com/user-attachments/assets/ee5f650c-6d5f-4215-b7e9-36a2316f3382"></video>
+As you can see that the grass is actually split in multiple circles, each stacked on top of each other, Stacked close enough that from a correct angle it appears as a single entity. The "grass" is made by stacking a bunch of same meshes on top of each other, changing their texture by sampling a noise texture in a shader, and discarding the samples which don't fit the requirements, making the not needed area transparent. This method of staking a bunch of meshes on top of each other with semi-transparent textures, is called as Shell Texturing. This is a fairly old method, and is being used since a very old time in video games for fur and hair rendering.
+<br>
+<br>
+You can see how shell texturing works in <a href="https://www.youtube.com/watch?v=9dr-tRQzij4&t=0s">this video</a>.
+<h1>Resources</h1>
+<h3>For movement on Mesh Surface and IK</h3>
+<li>Movement :- https://github.com/KrishnaSonawane8008/Walking-on-Mesh-Surface-in-Godot-4</li> 
+<br>
+<li>IK :- https://github.com/KrishnaSonawane8008/Multi-Directional-Raycast-Plugin-for-Godot-4</li>
+<h3>For setting up multiplayer in Godot</h3>
+<li>FinePointCGI :- https://www.youtube.com/watch?v=e0JLO_5UgQo&t=0s</li>
+<br>
+<li>DevLogLogan :- https://www.youtube.com/watch?v=n8D3vEx7NAE&t=0s</li>
+<h3>For Shell Texturing</h3>
+Acerola :- "https://www.youtube.com/watch?v=9dr-tRQzij4&t=0s"
