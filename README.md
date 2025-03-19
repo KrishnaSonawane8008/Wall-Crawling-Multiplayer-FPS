@@ -29,8 +29,16 @@ The movement looks stiff and is stuttering a bit when rotated, this is solved wh
 <a href="https://in.mathworks.com/discovery/inverse-kinematics.html">Inverse Kinematics</a> is a method of animation of a system of connected "lines" which are connected via joints between every two sets of "lines"(these lines can be anything, rods, metal bars, robot parts, etc...).The main goal of Inverse Kinematics is to make this "arm", made by the connection of these "lines", reach from one position to another.
 <br>
 <br>
-In our case these "lines" are the bones in the <a href="https://en.wikipedia.org/wiki/Skeletal_animation#:~:text=Skeletal%20animation%20or%20rigging%20is,or%20bones%2C%20and%20collectively%20forming">skeleton</a> used for <a href="https://www.youtube.com/watch?v=3RSwjZLClRc">rigging</a> our player model. The animation works by setting the current position of the end bone as the starting point and a new point on the walking surface(found by raycast collisions, more on this later) as the goal point, where the end bone is to place its tip. The IK process is made easy by the Godot 4 <a href="https://docs.godotengine.org/en/stable/classes/class_skeletonik3d.html">SkeletonIK3D</a> node.
+In our case these "lines" are the bones in the <a href="https://en.wikipedia.org/wiki/Skeletal_animation#:~:text=Skeletal%20animation%20or%20rigging%20is,or%20bones%2C%20and%20collectively%20forming">skeleton</a> used for <a href="https://www.youtube.com/watch?v=3RSwjZLClRc">rigging</a> our player model. The animation works by setting the current position of the end bone as the starting point and the next point on the walking surface(found by raycast collisions, more on this later) as the goal point, where the end bone is to place its tip. The IK process is made easy by the Godot 4 <a href="https://docs.godotengine.org/en/stable/classes/class_skeletonik3d.html">SkeletonIK3D</a> node.
 <br>
 <br>
 Once the IK is setup, we can see how the player movement is made more smooth(bad quality because of compression):
 <video src="https://github.com/user-attachments/assets/f2671e44-a1d7-4f41-b797-b92c8922537e"></video>
+<h3>Improving IK</h3>
+As i mentioned before, that the next point on the walking surface is found by getting a raycast collision with the walking surface. The quality of the IK animation depends on the quality of the found collision point. For example, i first had the idea of using straight raycasts to get the collision points but this provided bad inputs when the player was standing on sharply curved surfaces because of these sharp angles, the raycasts were missing a lot and the IK animation was looking bad.
+<br>
+<br>
+To solve this problem, i chose to use my <a href="https://github.com/KrishnaSonawane8008/Multi-Directional-Raycast-Plugin-for-Godot-4">MultiJoint_Raycast plugin</a> which allowed me to curve the raycasts as i wished. Now these curved raycasts have a very low chance of missing the surface instead of the strainght variant which missed the surface when moving on sharp cornered surfaces.
+<br>
+<br>
+You can see below, how i used the plugin with the player model:
