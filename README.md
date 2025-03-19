@@ -42,3 +42,4 @@ To solve this problem, i chose to use my <a href="https://github.com/KrishnaSona
 <br>
 <br>
 You can see below, how i used the plugin with the player model:
+<video src="https://github.com/user-attachments/assets/eea75b1e-2c67-4423-ad4a-ebbcd8b74239"></video>
