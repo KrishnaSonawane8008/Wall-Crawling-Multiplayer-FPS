@@ -22,4 +22,4 @@ Once the movement is implemented for the player model, grappling is just a case 
 <br>
 Now that the movement is setup, you can see how it looks without IK animation:
 <br>
-
+<video src="https://github.com/user-attachments/assets/a3c74757-a0c1-4306-8511-33f310394653"></video>
