@@ -57,6 +57,6 @@ Godot provides its own multiplayer API, info about which can be found in the doc
 <br>
 If you want to go through a basic setup tutorial, i would recommend these videos:
 <br>
-<li>FinePointCGI :- https://www.youtube.com/watch?v=e0JLO_5UgQo&t=2111s</li>
+<li>FinePointCGI :- https://www.youtube.com/watch?v=e0JLO_5UgQo&t=0s</li>
 <br>
-<li>DevLogLogan :- https://www.youtube.com/watch?v=n8D3vEx7NAE&t=1648s</li>
+<li>DevLogLogan :- https://www.youtube.com/watch?v=n8D3vEx7NAE&t=0s</li>
