@@ -8,3 +8,5 @@ The players can walk on walls, arches, or really any surface on the map, in addi
 <br>
 <br>
 You can get a glimpse at the gameplay below(sorry for bad quality, github doesn't allow very large videos, a better video can be seen <a href="/BetterQuality_GameplayVideo/Multiplayer_GameplayCompressed.mp4">here</a>):
+<br>
+<video src="https://github.com/user-attachments/assets/d8bdd78a-056b-49b3-b2c4-c5b9f8564214"></video>
