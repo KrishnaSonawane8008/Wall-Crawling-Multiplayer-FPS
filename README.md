@@ -32,4 +32,5 @@ The movement looks stiff and is stuttering a bit when rotated, this is solved wh
 In our case these "lines" are the bones in the <a href="https://en.wikipedia.org/wiki/Skeletal_animation#:~:text=Skeletal%20animation%20or%20rigging%20is,or%20bones%2C%20and%20collectively%20forming">skeleton</a> used for <a href="https://www.youtube.com/watch?v=3RSwjZLClRc">rigging</a> our player model. The animation works by setting the current position of the end bone as the starting point and a new point on the walking surface(found by raycast collisions, more on this later) as the goal point, where the end bone is to place its tip. The IK process is made easy by the Godot 4 <a href="https://docs.godotengine.org/en/stable/classes/class_skeletonik3d.html">SkeletonIK3D</a> node.
 <br>
 <br>
-Once the IK is setup, we can see how the player movement is made more smooth:
+Once the IK is setup, we can see how the player movement is made more smooth(bad quality because of compression):
+<video src="https://github.com/user-attachments/assets/f2671e44-a1d7-4f41-b797-b92c8922537e"></video>
