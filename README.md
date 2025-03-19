@@ -52,7 +52,7 @@ Godot provides its own multiplayer API, info about which can be found in the doc
 <br> 
 <li>ENetMultiplayerPeer :- https://docs.godotengine.org/en/stable/classes/class_enetmultiplayerpeer.html </li>
 <br> 
-<li>MultiplayerPeer :- https://docs.godotengine.org/en/stable/classes/class_multiplayerpeer.htmll </li>
+<li>MultiplayerPeer :- https://docs.godotengine.org/en/stable/classes/class_multiplayerpeer.html </li>
 <br>
 <br>
 If you want to go through a basic setup tutorial, i would recommend these videos:
