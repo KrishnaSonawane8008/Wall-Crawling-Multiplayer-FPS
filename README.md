@@ -43,3 +43,20 @@ To solve this problem, i chose to use my <a href="https://github.com/KrishnaSona
 <br>
 You can see below, how i used the plugin with the player model:
 <video src="https://github.com/user-attachments/assets/eea75b1e-2c67-4423-ad4a-ebbcd8b74239"></video>
+<h3>Multiplayer in Godot</h3>
+Godot provides its own multiplayer API, info about which can be found in the documentation. I would reading some of these:
+<br>
+<li>High-level multiplayer :- https://docs.godotengine.org/en/stable/tutorials/networking/high_level_multiplayer.html </li>
+<br> 
+<li>MultiplayerAPI :- https://docs.godotengine.org/en/stable/classes/class_multiplayerapi.html </li>
+<br> 
+<li>ENetMultiplayerPeer :- https://docs.godotengine.org/en/stable/classes/class_enetmultiplayerpeer.html </li>
+<br> 
+<li>MultiplayerPeer :- https://docs.godotengine.org/en/stable/classes/class_multiplayerpeer.htmll </li>
+<br>
+<br>
+If you want to go through a basic setup tutorial, i would recommend these videos:
+<br>
+<li>FinePointCGI :- https://www.youtube.com/watch?v=e0JLO_5UgQo&t=2111s</li>
+<br>
+<li>DevLogLogan :- https://www.youtube.com/watch?v=n8D3vEx7NAE&t=1648s</li>
