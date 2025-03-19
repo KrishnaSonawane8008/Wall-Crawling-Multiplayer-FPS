@@ -60,7 +60,15 @@ If you want to go through a basic setup tutorial, i would recommend these videos
 <br>
 <li>DevLogLogan :- https://www.youtube.com/watch?v=n8D3vEx7NAE&t=0s</li>
 <h1>The Environment</h1>
-If you went through <a href="https://github.com/KrishnaSonawane8008/Walking-on-Mesh-Surface-in-Godot-4">this</a> page, you will know that the mesh surface walking plugin works, so first i needed to build the entire environment in blender and run it for edge cases using the SortMesh class in the <a href="https://github.com/KrishnaSonawane8008/Walking-on-Mesh-Surface-in-Godot-4">plugin</a>. 
+If you went through <a href="https://github.com/KrishnaSonawane8008/Walking-on-Mesh-Surface-in-Godot-4">this</a> page, you will know that the mesh surface walking class works, so first i needed to build the entire environment in blender and run it for edge cases using the MeshSorter class in this <a href="https://github.com/KrishnaSonawane8008/Walking-on-Mesh-Surface-in-Godot-4">page</a>. 
 <br>
 <br>
-Once i was sure that the environment had "clean" geometry, i can make the actual model invisible and just replace the environment with its parts. Each part has the same geometry or mostly the same geometry as that part of the walking surface, but are of a better quality and have been completely textured.
+Once i was sure that the environment had "clean" geometry, i can make the actual model invisible and just replace the environment with its parts. Each part has the same geometry or mostly the same geometry as that part of the walking surface, but are of a better quality and have been completely textured, giving the effect of the player walking on the better quality surface when in reality, the player character is walking on a much lower quality surface.
+<h3>The "Grass" in the Environment</h3>
+Godot doesn't really allow for a lot of high quality grass, like there is the <a href="https://docs.godotengine.org/en/stable/classes/class_multimeshinstance3d.html#class-multimeshinstance3d">MultiMeshInstance3D</a> node, but it really doesn't allow much control while placing the grass and lags a lot when placing like a million instances of grass. So i instead chose to fake the grass in the environment.
+<br>
+<br>
+You might notice that the grass in the <a href="/BetterQuality_GameplayVideo/Multiplayer_GameplayCompressed.mp4">gameplay video</a> looks like a bunch of cones. This is not a choice for giving the grass a stylized look but rather a try at hiding the "secrets" of the grass.
+<br>
+<br>
+You see, the grass in the game is actually not grass:
